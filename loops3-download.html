@@ -39,13 +39,13 @@
       return true;
     }
     // Add your code here
-    while (i>=2) {
-      if (isPrime(i)) {
-        para.textContent += `${i}, `;
+    let j = 500;
+    while (j>=2) {
+      if (isPrime(j)) {
+        para.textContent += `${j}, `;
       }
-      i--;
+      j--;
     }
-
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
