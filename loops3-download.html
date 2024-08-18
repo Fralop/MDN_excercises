@@ -30,13 +30,12 @@
     const para = document.createElement('p');
 
     function isPrime(num) {
-      if (num < 2) return false; // Any number less than 2 is not prime
-      if (num === 2) return true; // Special case: 2 is a prime number
-      for(let j = 2; j <= Math.sqrt(num); j++) {
+      for(let j = 2; j < num; j++) {
         if(num % j === 0) {
           return false;
         }
       }
+
       return true;
     }
     // Add your code here
