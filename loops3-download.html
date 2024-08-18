@@ -38,9 +38,13 @@
 
       return true;
     }
-
-
     // Add your code here
+    while (i>=2) {
+      if (isPrime(i)) {
+        para.textContent += `${i}, `;
+      }
+      i--;
+    }
 
 
     // Don't edit the code below here!
