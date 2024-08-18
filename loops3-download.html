@@ -41,7 +41,9 @@
     // Add your code here
     while (i>=2) {
       if (isPrime(i)) {
-        para.textContent += `${i}, `;
+        const list = document.createElement('li');
+        list.textContent += `${i}`;
+        para.appendChild(list);
       }
       i--;
     }
