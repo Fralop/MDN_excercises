@@ -37,3 +37,11 @@ tbody tr:nth-child(odd) {
 caption {
   padding: 10px;
 }
+
+table td:nth-child(10) {
+  border: 2px solid orange;
+}
+
+td[headers~="diameter"] {
+  border: 2px solid red;
+}
